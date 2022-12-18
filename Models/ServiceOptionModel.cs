@@ -1,6 +1,6 @@
-﻿using BrowserStorage.Enums;
+﻿using WebStorage.Enums;
 
-namespace BrowserStorage.Models
+namespace WebStorage.Models
 {
     /// <summary>
     /// Defines the <see cref="ServiceOptionModel" />.

@@ -1,4 +1,4 @@
-﻿namespace BrowserStorage.API
+﻿namespace WebStorage
 {
     /// <summary>
     /// Defines the <see cref="IClientStorage" />.

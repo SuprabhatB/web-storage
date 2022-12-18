@@ -1,10 +1,9 @@
-﻿using BrowserStorage.API;
-using BrowserStorage.Models;
+﻿using WebStorage.Models;
 
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.JSInterop;
 
-namespace BrowserStorage
+namespace WebStorage
 {
     /// <summary>
     /// Defines the <see cref="ServiceExtension" />.

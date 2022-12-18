@@ -1,4 +1,4 @@
-﻿namespace BrowserStorage.Enums
+﻿namespace WebStorage.Enums
 {
     /// <summary>
     /// Defines the <see cref="WebStorageType" />.

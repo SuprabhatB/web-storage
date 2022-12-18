@@ -5,10 +5,10 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
-    <PackageId>Browser.Storage</PackageId>
+    <PackageId>Web.Storage.Core</PackageId>
     <Authors>Suprabhat Biswal</Authors>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
-    <Title>Browser Storage</Title>
+    <Title>Web Storage</Title>
     <Version>6.0.0</Version>
     <Company>Code Flow Creative</Company>
     <Description>A library to provide access to local/session storage in Blazor applications</Description>
@@ -16,7 +16,7 @@
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <IncludeSymbols>True</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
-    <RepositoryType></RepositoryType>
+    <RepositoryType>git</RepositoryType>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Copyright>2022</Copyright>
     <PackageReadmeFile>README.md</PackageReadmeFile>

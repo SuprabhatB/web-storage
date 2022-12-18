@@ -1,15 +1,15 @@
-using BrowserStorage.Enums;
-using BrowserStorage.Models;
+using WebStorage.Enums;
+using WebStorage.Models;
 
 using Microsoft.Extensions.Options;
 using Microsoft.JSInterop;
 
-namespace BrowserStorage.API
+namespace WebStorage
 {
     /// <summary>
     /// Defines the <see cref="ClientStorage" />.
     /// </summary>
-    /// <seealso cref="BrowserStorage.API.IClientStorage" />
+    /// <seealso cref="WebStorage.IClientStorage" />
     /// <seealso cref="System.IAsyncDisposable" />
     public class ClientStorage : IClientStorage, IAsyncDisposable
     {
@@ -23,7 +23,7 @@ namespace BrowserStorage.API
         public ClientStorage(IJSRuntime jsRuntime, IOptions<ServiceOptionModel> options)
         {
             _storageType = options != null ? (int)options.Value.StorageType : (int)WebStorageType.LocalStorage;
-            _moduleTask = new(() => jsRuntime.InvokeAsync<IJSObjectReference>("import", "./_content/BrowserStorage/js/client.js").AsTask());
+            _moduleTask = new(() => jsRuntime.InvokeAsync<IJSObjectReference>("import", $"./_content/web.storage.core/js/client.js").AsTask());
         }
 
         /// <summary>
